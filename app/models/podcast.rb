@@ -4,6 +4,6 @@ class Podcast < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :eposodes
+  has_many :episodes
 
 end
