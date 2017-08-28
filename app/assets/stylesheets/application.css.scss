@@ -59,8 +59,9 @@ body {
 .button_highlight {
   background: $highlight;
   transition: background .4s ease-in-out;
+
   &:hover {
-   background: darken($highlight, 7.5%);
+    background: darken($highlight, 7.5%);
   }
 }
 
@@ -68,8 +69,9 @@ body {
   background: $white;
   color: $dark;
   transition: background .4s ease-in-out;
+
   &:hover {
-   background: darken($white, 7.5%);
+    background: darken($white, 7.5%);
   }
 }
 
@@ -77,6 +79,7 @@ body {
   color: $dark;
   background: $white;
   padding: 2.5rem 0;
+
   #logo {
     float: left;
     text-transform: uppercase;
@@ -84,20 +87,25 @@ body {
     color: $dark;
     text-decoration: none;
   }
+
   nav {
     float: right;
+
     ul {
       list-style: none;
       margin: 0;
+
       li {
         display: inline;
         margin-left: 2rem;
         position: relative;
+
         a {
           color: $dark;
           text-decoration: none;
           font-weight: 700;
           font-size: 0.9rem;
+
           &:hover {
             color: $highlight;
           }
@@ -111,6 +119,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
   h1 {
     text-align: center;
     padding: 8.5rem 0;
@@ -148,6 +157,7 @@ body {
 .pagination {
   text-align: center;
   margin: 2rem 0;
+
   a, .previous_page, .current, .next_page {
     padding: 0.75rem 1rem;
     margin: 0 .25rem;
@@ -159,17 +169,21 @@ body {
     font-size: .7rem;
     font-style: normal;
     color: $dark;
+
     &:hover {
       background: $highlight;
       color: $white;
     }
   }
+
   .disabled {
     color: #C0C0C0;
+
     &:hover {
       color: #C0C0C0;
     }
   }
+
   .current {
     background: $highlight;
     color: $white;
@@ -180,6 +194,7 @@ body {
   padding: 3rem 3.5%;
   background: $white;
   border-radius: .35rem;
+
   .title {
     color: $dark;
     text-align: center;
@@ -208,6 +223,6 @@ textarea {
   height: 8rem;
 }
 
-@import 'normalize';
-@import 'welcome';
-@import 'podcasts';
+@import "normalize";
+@import "welcome";
+@import "podcasts";

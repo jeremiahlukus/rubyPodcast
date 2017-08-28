@@ -24,7 +24,7 @@
         <% @episodes.each do |episode| %>
           <li class="cf">
             <div class="episode_thumbnail">
-              <a href="episode.html">
+              <a href="#">
                 <%= image_tag episode.episode_thumbnail.url(:medium) %>
               </a>
             </div>
@@ -39,6 +39,8 @@
           </li>
         <% end %>
       </ul>
+
+      <%= will_paginate @episodes, previous_label: "Previous", next_label: "Next" %>
     </div>
   </div>
 </div>

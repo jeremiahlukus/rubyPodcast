@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem "paperclip"
 gem 'aws-sdk'
+gem 'will_paginate'
 
 
 
